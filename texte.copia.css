@@ -1,0 +1,1397 @@
+.playfair-display->{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/*isso acima e a fonte^*/
+
+:root{
+    --cursor-default: url(./clique\ cursor\ 2.png), auto;
+    --cursor-pointer: url(./clique\ curso\ 1.png), auto;
+    --cursor-text: url(./clique\ curso\ 1.png), auto;
+}
+
+/*tudo dentro do site*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+/*inicio scrollbar*/
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    border-radius: 40px;
+}
+
+::-webkit-scrollbar-track{
+    background-color:rgba(49, 63, 0, 0.918);
+
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: green;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(0, 184, 0) ;
+
+}
+
+/*fim scrollbar*/
+
+/*o html para rolagem*/
+html{
+    scroll-behavior: smooth;
+    cursor: var(--cursor-default) ;
+}
+
+a, .nav-manual , button, input[type="ckeckbox"], input[type="radio"], input[type="sumbit"], .contenier, .manual-btn, .flip{
+    cursor: var(--cursor-pointer) ;
+}
+
+
+/*class interface*/
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*class flex*/
+.flex{
+    display: flex;
+    
+}
+
+
+/*corpo do site*/
+
+body{
+    background-color: rgba(242, 250, 212, 0.918);
+    color: rgb(2, 199, 2);
+    font-family:"Playfair Display", serif;
+    font-weight: 400;
+    height: 100vh;
+    width: 100%;
+
+
+    
+}
+/*fim do corpo do site*/
+
+/*cabeçalho*/
+
+header> .interface{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+
+.interface img{
+    width: 150px;
+    height: 150px;
+}
+
+nav a{
+    color: rgb(7, 255, 7);
+    text-decoration:none;
+    margin: 0 70px;
+    padding: 0px 150px 4px 0px;
+    font-size: 16px;
+    position: relative;
+    justify-content: center;
+}
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color:rgb(16, 143, 16);
+    position: absolute;
+    bottom:0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    padding: 0px 0px;
+    align-items: center;
+}
+
+nav a:hover::after{
+    width: 40%;
+}
+
+header{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-size: auto;
+    padding: 2px;
+    transition: 0.5s;
+}
+
+header.rolagem{
+    background-color:#311f19;
+    padding: 2px 4%;
+    background-size: auto;
+    z-index: 999;
+}
+
+header.rolagen{
+    color: rgb(16, 143, 16) ;
+    padding: 10px ;
+}
+/*fim do cabeçalho*/
+
+/* paragrafo1*/
+section.paragrafo1{
+    padding: 18rem 10%;
+    background-image: url(fundo.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section.paragrafo1 .flex{
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px 4%;
+}
+
+h1{
+    padding: 10px;
+}
+
+/*subtitulo1*/
+.paragrafo1 h2{
+
+    color: rgb(255, 255, 255);
+    font-weight: 4000;
+    font-size: 40px;
+    background-color:rgba(248, 253, 231, 0.178);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+}
+.paragrafo1 p{
+    color: rgb(34, 56, 0);
+    font-size: 19px ;
+    font-weight: 500;
+    background-color:rgba(255, 255, 254, 0.685);
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;    
+}
+
+.efeito-paragrafo1{
+    visibility: hidden;
+}
+/*fim do paragrafo1*/
+
+/*bordar com imagem*/
+section.imagem-do-inicio-dino{
+    padding: 70px 0;
+}
+
+.imagem-do-inicio-dino .itens-contanier{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 40px;
+
+}
+
+.imagem-do-inicio-dino .itens-contanier1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 40px;
+
+}
+
+
+.imagem-do-inicio-dino .itens-contanier .img-dino-menu img{
+    height: 320px;
+    width: 320px;
+}
+
+.imagem-do-inicio-dino .itens-contanier1 .img-dino-menu1 img{
+    height: 320px;
+    width: 320px;
+}
+
+
+.imagem-do-inicio-dino .itens-contanier1 .text-dino-menu h3{
+    font-size: 3em;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+
+.imagem-do-inicio-dino .itens-contanier .text-dino-menu h3{
+    font-size: 3em;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.itens-contanier .text-dino-menu h3 span{
+    font-weight: 200;
+    color:#4b2200;
+}
+
+.itens-contanier1 .text-dino-menu h3 span{
+    font-weight: 200;
+    color:#4b2200;
+}
+
+
+.itens-contanier1 .text-dino-menu p{
+    font-size: 23px;
+    color: #4b2200;
+}
+
+.itens-contanier .text-dino-menu p{
+    font-size: 23px;
+    color: #4b2200;
+}
+
+.efeito-txt,.efeito-img,.efeito-img1{
+    visibility: hidden;
+}
+
+
+/*imagem menu fim*/
+
+
+/*começo do triassico*/
+section.triássico{
+    padding: 3px auto;
+    text-align: left;
+    margin-left: center;
+    padding: 2rem 10%;
+    background:#311f19;
+}
+
+section.triássico .flex{
+    align-items: center;
+
+}
+
+
+.efeito-tri{
+    visibility: hidden;
+}
+/*subtitulo.triassico*/
+.triássico h2{
+
+    color: rgb(221, 221, 221);
+    font-weight: 700;
+    font-size: 30px;
+    padding: auto;
+}
+
+.triássico p{
+
+    font-size: 18px;
+    align-items: center;
+}
+
+/*clima-tri*/
+
+.clima-tri{
+    padding: 3px auto;
+    text-align: left;
+    margin-left: center;
+    padding: 2rem 10%;
+    background:#311f19;
+}
+.clima-tri h2{
+    color: rgb(221, 221, 221);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.clima-tri p{
+    font-size: 15px;
+    align-items: center;
+}
+
+.efeito-clima-tri{
+    visibility: hidden;
+}
+
+
+.linha .backcolor{
+    background-color: #311f19;
+    padding: 40px 600px ;
+}
+/*fim clima triássico*/
+
+
+/*section clima-tri img*/
+.section.clima-tri-img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
+
+.clima-tri-img h2{
+    color: rgb(0, 56, 0);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contenier{
+    position: relative;
+    width: 700px;
+    height: 365px;
+    padding: 0 300px;
+}
+
+.contenier:hover .flip{
+    transform: rotateY(180deg);
+
+}
+
+.flip{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+.frente, .tras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
+    backface-visibility: hidden;
+    padding: 10px;
+
+}
+
+.frente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#311f19;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration:underline;
+}
+
+.tras{
+    background-image: url(clima\ tri.jpg);
+    background-size: cover;
+    transform: rotateY(180deg);    
+}
+
+/*section dataçao*/
+
+section.dataçao-tri{
+    padding: 30px auto;
+    text-align: left;
+    margin-left: center;
+    padding: 4rem 10%;
+    background-color: #311f19;
+}
+
+
+
+.dataçao-tri h2{
+    color: rgb(196, 255, 235);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.dataçao-tri p{
+    font-size: 18px;
+    color:rgb(2, 199, 2);
+}
+
+.span1{
+        color:rgb(180, 226, 216);
+        font-weight: 700;
+}
+
+.span2{
+        color: rgb(180, 226, 216);
+        font-weight: 700;
+}
+
+.span3{
+        color:rgb(180, 226, 216);
+        font-weight: 700;
+}
+
+.efeito-datacao2{
+    visibility: hidden;
+}
+
+/*especies tri*/
+
+.section.especie{
+    height: 490px;
+    overflow: hidden;
+    
+
+}
+.especie.flex{
+    padding: 0%;
+}
+
+.especie{
+    padding: 0px 11%;
+}
+
+
+.especie h2{
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    color: white;
+    text-align: justify;
+    justify-content: center;
+    padding: 0 299px;
+    background-color: #311f19;
+    border: 0;
+    border-radius: 20px;
+    
+}
+
+/*imagems de card slider*/
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+
+.slides{
+    width: 400%;
+    height: 600px;
+    display:flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+
+.slide img{
+    width: 800px;
+    height: 600px;
+}
+
+.nav-manual{
+    position: absolute;
+    width:800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 5px solid green;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 50px;
+}
+
+.manual-btn:hover{
+    background-color: #311f19;
+}
+
+#radio1:checked ~.frist{
+    transition: 2.5s;
+    margin-top: 0;
+}
+
+#radio2:checked ~.frist{
+    transition: 2s;
+    margin-top: -19%;
+}
+
+#radio3:checked ~ .frist{
+    transition: 2s;
+    margin-top:-38%;
+}
+/* fim card*/
+
+/*final=tri*/
+section.fim-tri{
+    padding: 30px auto;
+    text-align: left;
+    margin-left: center;
+    padding: 4rem 10%;
+    background-color: #311f19;
+}
+
+.final-tri h2{
+    color: rgb(221, 221, 221);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.final-tri p{
+    font-size: 18px;
+    align-items: center;
+}
+
+.efeito-fim-tri{
+    visibility: hidden;
+}
+/* fim do triassico*/
+
+/*imagem de transiçao*/
+.img-transision1 img{
+    width:100%;
+    height: 700px;
+}
+/*fim da transiçap*/
+
+/*linha3*/
+
+/*fim da linha3*/
+
+/*inicio do jurassico*/
+section.jurassico{
+    padding: 3px auto;
+    text-align: left;
+    margin-left: center;
+    padding: 2rem 10%;
+    background-image: url(fundo\ jura.jpg);
+    background-size: 600px;
+}
+
+.jurassico2{
+    background-color: #50331b;
+    border-radius: 30px;
+    
+}
+
+.jurassico2 h2{
+    color: rgb(196, 255, 235);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 40px;
+}
+
+.jurassico2 p{
+    font-size: 18px;
+    align-items: center;
+    color: rgb(2, 199, 2);
+    padding: 5px 40px;
+}
+
+.efeito-jura{
+    visibility: hidden;
+}
+
+/* fim do jurassico2*/
+
+/*clima-jura*/
+
+.clima-jura{
+    padding: 3px auto;
+    text-align: left;
+    margin-left: center;
+    padding: 2rem 10%;
+    background: #50331b;
+}
+
+.clima-ju h2{
+    color: rgb(196, 255, 235);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 40px;
+}
+
+.clima-ju h3{
+    color: rgb(196, 255, 235);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 40px;
+}
+
+.clima-ju p{
+    font-size: 18px;
+    align-items: center;
+    color: rgb(2, 199, 2);
+    padding: 5px 40px;
+}
+
+.efeito-clima-jura{
+    visibility: hidden;
+}
+
+/*fim do clima*/
+
+/*incio do exemplo do jurassico*/
+
+.section.clima-jura-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.clima-jura-img h2{
+        color:#50331b;
+        padding:0 300px ;
+        font-size: 30px;
+
+}
+
+.contenier{
+    position: relative;
+    width: 700px;
+    height: 365px;
+    padding: 3px 300px;
+}
+
+.contenier:hover .flip{
+    transform: rotateY(180deg);
+
+}
+
+.flip{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 2s;
+}
+
+.frente, .tras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
+    backface-visibility: hidden;
+    padding: 10px;
+
+}
+
+.clima-jura-img .frente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#50331b;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration:underline;
+    color: rgb(196, 255, 235);
+}
+
+.clima-jura-img .tras{
+    background-image: url(clima\ jura.jpg);
+    background-size: cover;
+    transform: rotateY(180deg);    
+}
+
+/*clima-jura fim*/
+
+/*dataçao jurassica*/
+
+.data-jura{
+    padding: 3px auto;
+    text-align: left;
+    margin-left: center;
+    padding: 2rem 10%;
+    background: #50331b;
+}
+
+.datacao-jura h2{
+    color: rgb(196, 255, 235);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.datacao-jura .text1{
+    font-size: 18px;
+    align-items: center;
+    color: rgb(2, 199, 2);
+    padding: 5px 0px;
+
+}
+
+.efeito-datacao-jura{
+    visibility: hidden;
+}
+
+.datacao-jura h3{
+    color:rgb(196, 255, 235) ;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: rgb(0, 44, 0);
+    border-radius: 30px;
+    padding: 0px 30px;
+}
+
+.datacao-jura p{
+    color:rgb(2, 199, 2);
+    font-size: 15px;
+}
+
+.datacao-jura .spani1{
+    color:rgb(196, 255, 235) ;
+}
+
+.datacao-jura .spani2{
+    color:rgb(196, 255, 235) ;
+}
+
+.datacao-jura .spani3{
+    color:rgb(196, 255, 235) ;
+}
+
+.datacao-jura .spani4{
+    color:rgb(196, 255, 235) ;
+}
+
+.datacao-jura .spani5{
+    color:rgb(196, 255, 235) ;
+}
+
+.datacao-jura .spani6{
+    color:rgb(196, 255, 235) ;
+}
+
+.datacao-jura .spani7{
+    color:rgb(196, 255, 235) ;
+}
+
+.datacao-jura .spani8{
+    color:rgb(196, 255, 235) ;
+}
+
+.datacao-jura .spani9{
+    color:rgb(196, 255, 235) ;
+}
+
+.datacao-jura .spani10{
+    color:rgb(196, 255, 235) ;
+}
+
+/*fim dataçao jura*/
+
+/*transition2*/
+
+.img-transition2 img{
+    width: 100%;
+    height: 600px;
+}
+
+/*card jura*/
+.slider2{
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.slides2{
+    width: 400%;
+    height: 600px;
+    display:flex;
+}
+
+.slides2 input{
+    display: none;
+}
+
+.slide2{
+    width: 25%;
+    position: relative;
+}
+
+
+.slide2 img{
+    width: 800px;
+    height: 600px;
+}
+
+.nav-manual2{
+    position: absolute;
+    width:850px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn2{
+    border: 7px solid green;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+    
+}
+
+.manual-btn2:not(:last-child){
+    margin-right: 50px;
+}
+
+.manual-btn2:hover{
+    background-color: #311f19;
+}
+
+#radio4:checked ~.frist{
+    transition: 2.5s;
+    margin-top: 0;
+}
+
+#radio5:checked ~.frist{
+    transition: 2s;
+    margin-top: -18.96%;
+}
+
+#radio6:checked ~ .frist{
+    transition: 2s;
+    margin-top:-37.6%;
+}
+
+#radio7:checked ~ .frist{
+    transition: 2s;
+    margin-top:-56.6%;
+}
+
+#radio8:checked ~ .frist{
+    transition: 2s;
+    margin-top:-75.4%;
+}
+
+#radio9:checked ~ .frist{
+    transition: 2s;
+    margin-top:-94.3%;
+}
+
+/*fim especie jura*/
+
+
+section.fim-jura{
+    padding: 30px auto;
+    text-align: left;
+    margin-left: center;
+    padding: 4rem 10%;
+    background-color:#50331b;
+}
+
+.fim-jura2 h2{
+    color: rgb(196, 255, 235);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.fim-jura2 p{
+    font-size:18px;
+    align-items: center;
+    color: rgb(2, 199, 2);
+}
+
+
+.img-passagem img{
+    width: 100%;
+    height: 600px;
+}
+
+.efeito-fim-jura{
+    visibility: hidden;
+}
+
+/*inicio do cretacio*/
+
+section.cretacio{
+    padding: 0px auto;
+    text-align: left;
+    margin-left: center;
+    padding: 2rem 10%;
+    background-color: #4b2200;
+}
+
+
+
+.cretacio2 h2{
+    color: rgb(150, 252, 218);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 40px;
+}
+
+.cretacio2 p{
+    font-size: 18px;
+    align-items: center;
+    color:rgb(2, 199, 2);
+    padding: 5px 40px;
+}
+
+.efeito-creta{
+    visibility: hidden;
+}
+
+/*clima do cretacio*/
+section.clima-creta{
+    padding: 30px auto;
+    text-align: left;
+    margin-left: center;
+    padding: 4rem 10%;
+    background-color: #4b2200;
+}
+
+
+.clima-cretacio {
+    background-color: #351800;
+    border-radius: 30px;
+    height: 17%;
+}
+
+.clima-cretacio h2{
+    color: rgb(150, 252, 218);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 40px;
+}
+
+.clima-cretacio p{
+    font-size: 16px;
+    align-items: center;
+    color:rgb(2, 199, 2);
+    padding: 5px 40px;
+}
+
+.efeito-clima-creta{
+    visibility: hidden;
+}
+
+.datacao-creta{
+    padding: 30px auto;
+    text-align: left;
+    margin-left: center;
+    padding: 4rem 30%;
+    background-color: #4b2200
+}
+
+.data-creta h2{
+    align-items: center;
+    text-align: center;
+    color: rgb(150, 252, 218);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 10%;
+}
+
+
+.data-creta .text5{
+    font-size: 18px;
+    align-items: center;
+    color: rgb(2, 199, 2);
+    padding: 5px 0px;
+
+}
+
+.data-creta p{
+    font-size: 17px;
+    background-color:#50331b;
+    padding: 10px 10px;
+    border-radius: 10px 10px 80px 10px;
+    color:rgb(118, 255, 118);
+}
+
+.efeito-data-creta{
+    visibility: hidden;
+}
+
+/*fim dataçao creta*/
+
+/*card do creta*/
+
+.slider3{
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.slides3{
+    width: 400%;
+    height: 600px;
+    display:flex;
+}
+
+.slides3 input{
+    display: none;
+}
+
+.slide3{
+    width: 25%;
+    position: relative;
+}
+
+
+.slide3 img{
+    width: 800px;
+    height: 600px;
+}
+
+.nav-manual3{
+    position: absolute;
+    width:850px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn3{
+    border: 7px solid green;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+    
+}
+
+.manual-btn3:not(:last-child){
+    margin-right: 50px;
+}
+
+.manual-btn3:hover{
+    background-color: #311f19;
+}
+
+#radio10:checked ~.frist{
+    transition: 2.5s;
+    margin-top: 0;
+}
+
+#radio11:checked ~.frist{
+    transition: 2s;
+    margin-top: -18.96%;
+}
+
+#radio12:checked ~ .frist{
+    transition: 2s;
+    margin-top:-37.6%;
+}
+
+#radio13:checked ~ .frist{
+    transition: 2s;
+    margin-top:-56.6%;
+}
+
+#radio14:checked ~ .frist{
+    transition: 2s;
+    margin-top:-75.4%;
+}
+
+#radio15:checked ~ .frist{
+    transition: 2s;
+    margin-top:-94.3%;
+}
+
+
+section.extinçao{
+    padding: 70px 0;
+
+    background-color: rgb(26, 10, 0);
+}
+
+.extinçao .itens-contanier{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 40px;
+
+}
+
+.extinçao .itens-contanier1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 40px;
+
+}
+
+.extinçao .itens-contanier .texto-extin h3{
+    font-size: 3em;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.extinçao .itens-contanier1 .texto-extin2 h3{
+    font-size: 3em;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.itens-contanier .texto-extin h3 span{
+    font-weight: 200;
+    color:#d1592a;
+}
+
+.itens-contanier1 .texto-extin2 h3 span{
+    font-weight: 200;
+    color:#d1592a;
+}
+
+.extinçao .itens-contanier .img-extin img{
+    height: 320px;
+    width: 320px;
+}
+
+.extinçao .itens-contanier1 .img-extin2 img{
+    height: 320px;
+    width: 320px;
+}
+
+.itens-contanier .texto-extin p{
+    font-size: 20px;
+    color:white;
+}
+.itens-contanier1 .texto-extin2 p{
+    font-size: 20px;
+    color:white;
+}
+
+.efeito-extino1{
+    visibility: hidden;
+}
+
+.efeito-extino2{
+    visibility: hidden;
+}
+
+.efeito-extin-img{
+    visibility: hidden;
+}
+
+
+/*rodape do site*/
+
+footer{
+    padding: 20px 4%;
+    box-shadow: 0 0 40px 10px red;
+    background-color: rgb(39, 19, 0);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .logo-footer p{
+    font-size: 17px;
+    font-weight: 200;
+    color: white;
+}
+
+footer .logo-footer p span{
+    font-size: 17px;
+    font-weight: 200;
+    color:rgb(2, 199, 2);
+}
+
+
+footer .logo-footer3 img{
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 450px;
+    margin: 10px;
+}
+
+footer .line-footer4 p i{
+    color:rgb(2, 199, 2) ;
+    font-size: 30px;
+}
+
+footer .line-footer4 p a{
+    font-size: 17px;
+    color: white;
+}
+
+.line-footer4{
+    border-top: 2px solid rgb(2, 199, 2);
+}
+
+/*responsivo*/
+
+@media screen and (max-width: 1020px){
+    
+    /*flex*/
+
+    /*cabeçalho*/
+    .menu-dino{
+        display: none;
+    }
+
+    header.rolagem{
+        display: none;
+
+    }
+
+
+    .itens-contanier{
+        flex-direction: column;
+    }
+
+    .itens-contanier1{
+        flex-direction:column-reverse;
+    }
+    
+    .clima-tri-img1{
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+
+    }
+
+    .clima-tri-img h2{
+        align-items: center;
+        left: 0%;
+        font-size:22px;
+        font-weight: 800;
+        text-align: left;
+    }
+    .contenier{
+        padding: 0%;
+        width: 400px;
+        height: 320px;
+    }
+
+    .tras{
+        background-size: cover;
+    }
+
+    .especie h2{
+        padding: 0px;
+        align-items: center;
+        width: 240px;
+        height: 90px;
+        align-content: center;
+    }
+
+    .clima-jura-img h2{
+        left: -55%;
+        font-size:20px;
+        font-weight: 800;
+        padding: 0%;
+    }
+
+    .datacao-creta{
+        padding: 2%;
+        font-size: 23px;
+
+    }
+
+    .datacao-creta p{
+        font-size: 23px;
+
+    }
+
+    .clima-cretacio{
+        font-size: 50px;
+        padding: 2%;
+    }
+
+    .clima-cretacio p{
+        font-size: 23px;
+    }
+    
+    
+
+    .img-transision1, .img-transition2{
+        width: 490px;
+        height: 50%;
+    }
+    
+    .img-passagem{
+        width: 490px;
+        height: 50%;
+        
+    }
+
+    .cretacio p{
+        font-size: 23px;
+        
+    }
+
+    .datacao-jura p{
+        font-size: 23px;
+    }
+    
+    .jurassico2 p{
+        font-size: 20px;
+    }
+    
+    .triássico p{
+        font-size: 23px;
+    }
+    
+
+    .clima-tri p{
+        font-size: 23px;
+    }
+
+    .clima-ju p{
+        font-size: 23px;
+
+    }
+
+    .data-creta .text5{
+        font-size: 23px;
+    }
+
+    .clima-jura-img h2{
+        align-items: center;
+        left: -55%;
+        font-size:22px;
+        font-weight: 800;
+    }
+    
+
+    .itens-contanier .texto-extin p{
+        gap: 40px;
+        padding: auto;
+    }
+
+    .extinçao .itens-contanier .img-extin img{
+        padding: -50px;
+    }
+
+}
